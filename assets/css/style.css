@@ -1842,6 +1842,17 @@ img {
 .about-us.about-page .lab-btn {
   margin-top: 20px; }
 
+
+  /* @@@ table @@@ */
+  .table-green{
+    background-color:#878e02b5;
+    color: white;
+  }
+  .table-red{
+    background-color: #ce5800cf;
+    color: white;
+  }
+  /* @@@ table @@@2 */
   /* @@ pulutry section starts here  */
   .poultry-product-item{
     position: relative;
