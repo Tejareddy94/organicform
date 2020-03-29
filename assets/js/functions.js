@@ -36,23 +36,6 @@
             $(".mobile-menu").toggleClass("open");
         });
 
-        //mobile drodown menu display
-        $('.mobile-menu-area ul li a, .shop-menu li a').on('click', function(e) {
-            var element = $(this).parent('li');
-            if (element.hasClass('open')) {
-                element.removeClass('open');
-                element.find('li').removeClass('open');
-                element.find('ul').slideUp(1000,"swing");
-            }
-            else {
-                element.addClass('open');
-                element.children('ul').slideDown(1000,"swing");
-                element.siblings('li').children('ul').slideUp(1000,"swing");
-                element.siblings('li').removeClass('open');
-                element.siblings('li').find('li').removeClass('open');
-                element.siblings('li').find('ul').slideUp(1000,"swing");
-            }
-        });
    
 
         //menu options
@@ -208,18 +191,7 @@
             loop: true,
         });
 
-        // counterup js start here
-        $('.count-number').each(function () {
-            var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
-            $(this).prop('Counter', 0).animate({
-               Counter: $(this).text()
-            }, {
-               duration: 2000,
-               step: function (func) {
-                  $(this).text(parseFloat(func).toFixed(size));
-               }
-            });
-        });
+      
 
         // product view mode change js
         $(function() {
@@ -233,25 +205,6 @@
             });
         });
 
-        // shop cart + - start here
-        var CartPlusMinus = $('.cart-plus-minus');
-        CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
-        CartPlusMinus.append('<div class="inc qtybutton">+</div>');
-        $(".qtybutton").on("click", function() {
-            var $button = $(this);
-            var oldValue = $button.parent().find("input").val();
-            if ($button.text() === "+") {
-                var newVal = parseFloat(oldValue) + 1;
-            } else {
-                // Don't allow decrementing below zero
-                if (oldValue > 0) {
-                    var newVal = parseFloat(oldValue) - 1;
-                } else {
-                    newVal = 1;
-                }
-            }
-            $button.parent().find("input").val(newVal);
-        });
 
         // sop single slider
         var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -283,16 +236,6 @@
                 swiper: galleryThumbs
             },
             loop: true,
-        });
-
-        //Review Tabs
-        $('ul.review-nav').on('click', 'li', function (e) {
-            e.preventDefault();
-            var reviewContent = $('.review-content');
-            var viewRev = $(this).data('target');
-            $('ul.review-nav li').removeClass('active');
-            $(this).addClass('active');
-            reviewContent.removeClass('review-content-show description-show').addClass(viewRev);
         });
     });
 }(jQuery));
