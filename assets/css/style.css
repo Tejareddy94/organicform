@@ -984,139 +984,6 @@ img {
         .history-item .history-inner .history-content .hc-right {
           width: calc(100% - 170px); } }
 
-.search-cart {
-  margin-left: 30px !important; }
-  .search-cart li {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin-right: 10px;
-    color: #55775e;
-    border: 1px solid #55775e;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%; }
-    .search-cart li:last-child {
-      margin-right: 0; }
-    .search-cart li .cart-option.open .cart-content {
-      transform: scaleY(1); }
-    .search-cart li .cart-content {
-      width: 320px;
-      right: 0;
-      top: 56px;
-      background: #fff;
-      z-index: 9999;
-      padding: 10px;
-      transform-origin: top;
-      transform: scaleY(0);
-      -webkit-border-radius: 0 0 6px 6px;
-      -moz-border-radius: 0 0 6px 6px;
-      border-radius: 0 0 6px 6px;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-      .search-cart li .cart-content .cart-item {
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-        border-bottom: 1px solid #f0f0f0;
-        justify-content: space-between; }
-        .search-cart li .cart-content .cart-item a {
-          padding: 0 !important; }
-        .search-cart li .cart-content .cart-item .cart-img {
-          width: 120px; }
-        .search-cart li .cart-content .cart-item .cart-des {
-          width: calc(100% - 130px);
-          text-align: left; }
-          .search-cart li .cart-content .cart-item .cart-des a {
-            font-weight: 700;
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
-            .search-cart li .cart-content .cart-item .cart-des a:hover {
-              color: #55775e; }
-          .search-cart li .cart-content .cart-item .cart-des p {
-            margin-bottom: 0; }
-        .search-cart li .cart-content .cart-item .cart-btn {
-          width: 20px;
-          height: 20px;
-          top: 0;
-          right: 0;
-          line-height: 20px;
-          text-align: center;
-          box-shadow: 0 0 3px rgba(8, 136, 136, 0.08);
-          -webkit-border-radius: 100%;
-          -moz-border-radius: 100%;
-          border-radius: 100%;
-          -webkit-transition: all 0.3s ease;
-          -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease; }
-          .search-cart li .cart-content .cart-item .cart-btn:hover a {
-            color: #55775e; }
-      .search-cart li .cart-content .cart-bottom .cart-action a {
-        padding: 10px 20px !important;
-        line-height: 1.5 !important; }
-
-.search-input {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #040300cc;
-  z-index: 999;
-  text-align: center;
-  transform: scaleY(0);
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  transition: 0.5s ease; }
-  .search-input.open {
-    transform: scaleY(1); }
-  .search-input .search-close {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-    top: 5%;
-    right: 5%;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    .search-input .search-close:hover {
-      transform: rotate(90deg);
-      color: #55775e; }
-  .search-input form {
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    transform: translate(-50%, -50%); }
-    .search-input form input {
-      width: calc(100% - 50px);
-      padding: 15px;
-      border: none;
-      outline: none;
-      -webkit-border-radius: 10px 0 0 10px;
-      -moz-border-radius: 10px 0 0 10px;
-      border-radius: 10px 0 0 10px; }
-      .search-input form input::placeholder {
-        color: #181818; }
-      .search-input form input:focus {
-        border-color: #55775e; }
-    .search-input form button {
-      margin-left: -4px;
-      padding: 15px;
-      outline: none;
-      border: none;
-      background: #fff;
-      -webkit-border-radius: 0 10px 10px 0;
-      -moz-border-radius: 0 10px 10px 0;
-      border-radius: 0 10px 10px 0;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-
 .scocial-media {
   margin-bottom: 20px; }
   .scocial-media a {
@@ -1393,10 +1260,11 @@ img {
   .mobile-menu {
     display: none; } }
 .mobile-menu.transparent-header .mobile-header {
-  background: transparent; }
+  background: transparent;
+ }
 .mobile-menu .mobile-header {
   padding: 11px 15px;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index: 99;
