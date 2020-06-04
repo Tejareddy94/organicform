@@ -8,10 +8,6 @@
         // lightcase 
         $('a[data-rel^=lightcase]').lightcase();
 
-        // search cart option
-        $(document).on('click', '.cart-option', function () {
-            $(".cart-option").toggleClass("open");
-        });
         // Header Section Menu Part
         $("ul li ul").parent("li").addClass("menu-item-has-children");
         $(".shop-menu>li .shop-submenu").parent("li").children("a").addClass("dd-icon-down");
